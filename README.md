@@ -29,8 +29,8 @@ project:
 - **Small waveform** at the bottom in colour.
 - **Zoom** of the large waveform with the rotary selector, in track view.
 - **Rotary selector**: one track per detent in Serato's lists.
-- **Two patched players** at the same time. A stock player connected alongside ignores the added
-  packets (tested in the emulator only).
+- **Two patched players** at the same time. A patched player can also be used alongside a stock
+  one: the stock player ignores the added packets and works as usual.
 - **USB mode** (rekordbox drives) is unchanged.
 
 ## Requirements
