@@ -17,6 +17,9 @@ fi
 mkdir -p captures
 log="$PWD/captures/hd-$(date +%Y-%m-%dT%H-%M-%S).log"
 echo "Journal : $log"
+# Serato démarré depuis le Dock ne reçoit ni LANG ni LC_* : on fait pareil. Avec ceux du Terminal
+# (fr_FR), il lit les nombres à la française (virgule) : préréglages d'effets refusés (25/11).
+unset LANG ${(k)parameters[(I)LC_*]}
 SERATO_HD_LOG="$log" SERATO_HD_REC="${log%.log}.rec" DYLD_INSERT_LIBRARIES="$PWD/mac/serato_hd.dylib" \
   "/Applications/Serato DJ Pro.app/Contents/MacOS/Serato DJ Pro" >/dev/null 2>&1
 echo "Serato fermé."
