@@ -37,9 +37,10 @@ project:
 
 - A **CDJ-2000NXS** (not the NXS2) running **firmware 1.44**.
 - A **Mac** running macOS 11 or later.
-  - Tested on Apple Silicon with macOS 26.6.
+  - Tested on Apple Silicon with macOS 26.6 and 26.2.
   - The library also contains an Intel build, which has never been tested.
-- **Serato DJ Pro** installed in `/Applications`. Tested version: 4.0.0 (build 2697).
+- **Serato DJ Pro** installed in `/Applications`. Tested versions: 4.0.0 (build 2697) and 4.0.5
+  (build 405223).
 - **Python 3**, to build the firmware. It comes with Xcode's command line tools
   (`xcode-select --install`).
 - Two **FAT32** USB drives.
@@ -116,7 +117,7 @@ cf44b9b13b7acc9c123c3ef1d0dcd87640c40a078fa528cba0f5f064b9f49bd6  RESTAURATION/C
    codesign -dv "/Applications/Serato DJ Pro.app" 2>&1 | grep flags
    ```
 
-   - `flags=0x2(adhoc)`: fine. This is the case for Serato DJ Pro 4.0.0 as installed.
+   - `flags=0x2(adhoc)`: fine. This is the case for Serato DJ Pro 4.0.0 and 4.0.5 as installed.
    - If the word `runtime` appears, macOS will silently ignore the library. This case has not been
      tested.
 
@@ -165,8 +166,8 @@ with the players (`.rec`, 5 to 15 MB for 10 minutes). You can delete them at any
 - Loops are tracked from what Serato sends to the player. With the same track on both players,
   Serato sometimes takes one player out of its loop when a loop is set on the other one. The mask
   then stays on the old loop.
-- Tested with a single version of each part: CDJ-2000NXS 1.44, Serato DJ Pro 4.0.0, macOS 26.6
-  on Apple Silicon.
+- Tested only with CDJ-2000NXS 1.44, Serato DJ Pro 4.0.0 and 4.0.5, macOS 26.6 and 26.2 on Apple
+  Silicon.
 - The patch does not touch the player's boot loader or its backup program image, but no failure
   case could be tested.
 
@@ -243,6 +244,7 @@ inchangé.
   `./serato-hd.sh`. Rien n'est installé dans le système. Sur chaque platine : LINK → CONTROL MODE →
   USB MIDI.
 - Retour en arrière : flashe la clé RESTAURATION, et supprime le dossier du dépôt.
-- Essayé uniquement avec CDJ-2000NXS 1.44, Serato DJ Pro 4.0.0 et macOS 26.6 sur Apple Silicon.
+- Essayé uniquement avec CDJ-2000NXS 1.44, Serato DJ Pro 4.0.0 et 4.0.5, macOS 26.6 et 26.2 sur
+  Apple Silicon.
 - Projet sans lien avec Pioneer DJ / AlphaTheta ni Serato.
 - Licence MIT (voir [LICENSE](LICENSE)) : elle ne couvre que ce dépôt, pas le firmware de Pioneer.
