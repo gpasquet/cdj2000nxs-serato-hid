@@ -1,0 +1,29 @@
+{
+ "version": "v1 (firmware V39)",
+ "hdwave": {
+  "_hd_check": 71174864,
+  "_hd_hid": 71173220,
+  "_hd_inrep": 71172800,
+  "_hd_send": 71175176
+ },
+ "rgbwave": {
+  "_rgb_blit0": 16605244,
+  "_rgb_blit1": 16605262,
+  "_rgb_blit2": 16605280,
+  "_rgb_blit3": 16605298,
+  "_rgb_blit4": 16605346,
+  "_rgb_column": 16624492,
+  "_rgb_dec_asm": 16605508,
+  "_rgb_decode": 16617200,
+  "_rgb_frac_asm": 16605460,
+  "_rgb_fshow": 16612848,
+  "_rgb_memcpy": 16605184,
+  "_rgb_overview": 16627784,
+  "_rgb_phase": 16612884,
+  "_rgb_posh": 16634012,
+  "_rgb_time": 16625264,
+  "_rgb_wframe": 16612952
+ },
+ "sha256_patch": "1cad6de57325644846b123d7935d7dca2c82bd618bd1ed1d58aefaedb355b462",
+ "sha256_restauration": "cf44b9b13b7acc9c123c3ef1d0dcd87640c40a078fa528cba0f5f064b9f49bd6"
+}

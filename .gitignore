@@ -1,0 +1,5 @@
+captures/
+sortie/
+*.o
+*.elf
+.DS_Store
