@@ -22,15 +22,40 @@ waveform, as tall as in USB mode, with the beat grid, hot cues and loops.
 With Serato in HID mode, the stock player only shows a logo and a small waveform. With this
 project:
 
-- **Large colour waveform** at the top of the screen, as tall as in USB mode, computed from the
-  audio file of the track loaded in Serato.
-- Serato's **beat grid**, **hot cues** and **loops** tracked live: loop mask, loop points adjusted
-  with the jog wheel, ÷2 / ×2.
-- **Small waveform** at the bottom in colour.
+**Large waveform**
+
+- **Large colour waveform** at the top of the screen, computed from the audio file of the track
+  loaded in Serato. Three colour bands, matched to rekordbox's RGB waveform: bass in red, mids in
+  green, highs in blue.
+- **Taller than stock**: 122 lines instead of 90, up to just under the title bar.
+- **Full screen width**: 480 pixels instead of 400.
+- Serato's **beat grid** and **loops** tracked live: loop mask, loop points adjusted with the jog
+  wheel, ÷2 / ×2.
+- **Hot cues in Serato's colours**, on the large and the small waveform, updated live when you set
+  or delete them.
 - **Zoom** of the large waveform with the rotary selector, in track view.
-- **Rotary selector**: one track per detent in Serato's lists.
+
+**Display**
+
+- **Small waveform** at the bottom in colour.
+- **Musical key** of the track in place of the track number (labelled KEY), read from the file's
+  tags, including FLAC and M4A.
+- **BPM with its decimal**.
+- **QUANTIZE** shown in red or grey, following Serato. **TIME MODE** (elapsed / remaining) is
+  respected.
+- **Black title bar** instead of the blue gradient, and phase meter hidden to make room for the
+  waveform. USB mode keeps its stock display.
+
+**Controls**
+
+- **Rotary selector**: one track per detent in Serato's lists, with no jumps when turned fast.
+- **Needle Search** (touch strip) and the **BACK** button work in waveform view.
+
+**Other**
+
 - **Two patched players** at the same time. A patched player can also be used alongside a stock
   one: the stock player ignores the added packets and works as usual.
+- **Session log**, to report a problem (see [Play](#4-play)).
 - **USB mode** (rekordbox drives) is unchanged.
 
 ## Requirements
@@ -226,6 +251,13 @@ Patch de firmware pour le **Pioneer CDJ-2000NXS** (firmware 1.44) et bibliothèq
 DJ Pro** sur Mac. En mode HID, l'écran de la platine affiche la grande waveform en couleur, aussi
 haute qu'en mode USB, avec la grille de Serato, les hot cues et les boucles. Le mode USB est
 inchangé.
+
+Fonctions : waveform en trois bandes de couleur calées sur rekordbox (graves rouges, médiums verts,
+aigus bleus), plus haute (122 lignes au lieu de 90) et sur toute la largeur (480 pixels au lieu de
+400) ; hot cues aux couleurs de Serato sur les deux waveforms ; boucles suivies en direct ;
+tonalité (KEY) lue dans les tags ; BPM avec décimale ; QUANTIZE et TIME MODE suivis ; bandeau du
+titre noir et phase meter masqué ; un morceau par cran au sélecteur ; Needle Search et BACK en vue
+waveform ; journal de chaque séance ; platine d'origine utilisable à côté.
 
 > [!CAUTION]
 > **À tes propres risques.** Flasher un firmware modifié peut rendre la platine définitivement
