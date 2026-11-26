@@ -4,7 +4,9 @@ A firmware patch for the **Pioneer CDJ-2000NXS** and a companion library for **S
 macOS. In HID mode (player controlled by Serato), the player's screen shows the large colour
 waveform, as tall as in USB mode, with the beat grid, hot cues and loops.
 
-![Large colour waveform on the CDJ-2000NXS screen](images/apercu-waveform-haute.png)
+![Large colour waveform across the full width of the CDJ-2000NXS screen](images/apercu-pleine-largeur.png)
+
+![Loop mask on the large waveform](images/apercu-boucle.png)
 
 *Screenshots taken in an emulator of the player.*
 
