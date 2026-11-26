@@ -128,12 +128,13 @@ cf44b9b13b7acc9c123c3ef1d0dcd87640c40a078fa528cba0f5f064b9f49bd6  RESTAURATION/C
 ## 3. Install the Mac part
 
 1. Download the repository (**Code → Download ZIP** on GitHub, or `git clone`) and put it, for
-   example, in `Documents`.
+   example, in `Documents`. The commands below expect the folder `~/Documents/cdj2000nxs-serato-hid`:
+   if you downloaded the ZIP, rename `cdj2000nxs-serato-hid-main` to `cdj2000nxs-serato-hid`.
 2. Remove the quarantine flag that macOS sets on downloaded files. Without this, macOS may refuse
    to load the library:
 
    ```bash
-   xattr -dr com.apple.quarantine ~/Documents/cdj2000nxs-serato-hd
+   xattr -dr com.apple.quarantine ~/Documents/cdj2000nxs-serato-hid
    ```
 
 3. Check that Serato accepts an added library:
@@ -149,7 +150,7 @@ cf44b9b13b7acc9c123c3ef1d0dcd87640c40a078fa528cba0f5f064b9f49bd6  RESTAURATION/C
 4. Optional: rebuild the library (requires Xcode's tools):
 
    ```bash
-   ~/Documents/cdj2000nxs-serato-hd/mac/build.sh
+   ~/Documents/cdj2000nxs-serato-hid/mac/build.sh
    ```
 
 The Mac part installs nothing on the system: neither macOS nor Serato is modified. Serato started
@@ -161,7 +162,7 @@ the usual way (Dock, Finder) stays the stock Serato.
 2. Start Serato with the Mac part:
 
    ```bash
-   ~/Documents/cdj2000nxs-serato-hd/serato-hd.sh
+   ~/Documents/cdj2000nxs-serato-hid/serato-hd.sh
    ```
 
    - The Terminal stays busy while Serato is open.
