@@ -2,7 +2,7 @@
 
 A firmware patch for the **Pioneer CDJ-2000NXS** and a companion library for **Serato DJ Pro** on
 macOS. In HID mode (player controlled by Serato), the player's screen shows the large colour
-waveform, as tall as in USB mode, with the beat grid, hot cues and loops.
+waveform, even taller than in USB mode, with the beat grid, hot cues and loops.
 
 ![Large colour waveform across the full width of the CDJ-2000NXS screen](images/apercu-pleine-largeur.png)
 
@@ -29,7 +29,7 @@ project:
 - **Large colour waveform** at the top of the screen, computed from the audio file of the track
   loaded in Serato. Three colour bands, matched to rekordbox's RGB waveform: bass in red, mids in
   green, highs in blue.
-- **Taller than stock**: 122 lines instead of 90, up to just under the title bar.
+- **Taller than in USB mode**: 122 lines instead of 90, up to just under the title bar.
 - **Full screen width**: 480 pixels instead of 400.
 - Serato's **beat grid** and **loops** tracked live: loop mask, loop points adjusted with the jog
   wheel, ÷2 / ×2.
@@ -251,8 +251,8 @@ The firmware is rebuilt with two cross-compilers, `sh-elf-gcc` and `bfin-elf-gcc
 ## Résumé en français
 
 Patch de firmware pour le **Pioneer CDJ-2000NXS** (firmware 1.44) et bibliothèque pour **Serato
-DJ Pro** sur Mac. En mode HID, l'écran de la platine affiche la grande waveform en couleur, aussi
-haute qu'en mode USB, avec la grille de Serato, les hot cues et les boucles. Le mode USB est
+DJ Pro** sur Mac. En mode HID, l'écran de la platine affiche la grande waveform en couleur, encore
+plus haute qu'en mode USB, avec la grille de Serato, les hot cues et les boucles. Le mode USB est
 inchangé.
 
 Fonctions : waveform en trois bandes de couleur calées sur rekordbox (graves rouges, médiums verts,
